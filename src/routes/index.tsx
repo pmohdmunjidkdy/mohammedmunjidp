@@ -6,6 +6,7 @@ import {
   Rocket,
   Sparkles,
   Mail,
+  Phone,
   ArrowUpRight,
   Globe,
   Layers,
