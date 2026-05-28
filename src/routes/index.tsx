@@ -6,6 +6,7 @@ import {
   Rocket,
   Sparkles,
   Mail,
+  Phone,
   ArrowUpRight,
   Globe,
   Layers,
@@ -252,6 +253,13 @@ function Contact() {
         <p className="mt-4 text-muted-foreground">
           Got a project, idea, or just want to say hi? Drop a message or reach me on X.
         </p>
+        <a
+          href="tel:+918547394227"
+          className="mt-4 inline-flex items-center gap-2 font-display text-lg font-semibold text-primary hover:opacity-80 transition"
+        >
+          <Phone className="h-4 w-4" />
+          +91 85473 94227
+        </a>
 
         <form
           onSubmit={(e) => {
