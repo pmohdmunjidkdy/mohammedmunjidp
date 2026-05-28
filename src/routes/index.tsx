@@ -213,10 +213,10 @@ function Projects() {
 
 function Services() {
   const services = [
-    { icon: Globe, title: "Landing Pages", desc: "Single-page sites that look polished and load fast." },
+    { icon: Globe, title: "Website Design", desc: "Clinical Web, Institute Web and services, etc" },
     { icon: Rocket, title: "Portfolio Sites", desc: "Personal & student portfolios with modern design." },
     { icon: GraduationCap, title: "School Projects", desc: "Help with web-based school assignments & demos." },
-    { icon: Palette, title: "UI Redesigns", desc: "Refresh tired pages with clean, modern UI." },
+    { icon: Palette, title: "App building", desc: "Android and ios" },
   ];
   return (
     <section id="services" className="py-24 border-t border-border">
