@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import munjidPortrait from "@/assets/munjid-portrait.png";
 import {
   Code2,
   Palette,
@@ -104,44 +105,60 @@ function Hero() {
   return (
     <section id="top" className="hero-bg relative overflow-hidden">
       <div className="mx-auto max-w-6xl px-6 pt-24 pb-32 md:pt-32 md:pb-40">
-        <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-4 py-1.5 text-xs text-muted-foreground">
-          <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-          Available for small web projects
-        </div>
-        <h1 className="mt-6 font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95]">
-          Hi, I'm <span className="text-gradient">Mohammed Munjid P</span>.
-          <br />I build the web.
-        </h1>
-        <p className="mt-8 max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed">
-          An 8th-class student with a serious passion for professional web development.
-          I design and code clean, modern websites — and I'm just getting started.
-        </p>
-        <div className="mt-10 flex flex-wrap items-center gap-4">
-          <a
-            href="#projects"
-            className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 font-semibold shadow-glow hover:scale-[1.02] transition"
-          >
-            View my work <ArrowUpRight className="h-4 w-4" />
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-6 py-3 font-semibold hover:bg-card transition"
-          >
-            Get in touch
-          </a>
-        </div>
-
-        <div className="mt-20 grid grid-cols-3 gap-6 max-w-lg">
-          {[
-            { k: "8th", v: "Class student" },
-            { k: "5+", v: "Mini projects" },
-            { k: "∞", v: "Curiosity" },
-          ].map((s) => (
-            <div key={s.v}>
-              <div className="font-display text-3xl md:text-4xl font-bold text-gradient">{s.k}</div>
-              <div className="text-xs md:text-sm text-muted-foreground mt-1">{s.v}</div>
+        <div className="grid lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-16 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-4 py-1.5 text-xs text-muted-foreground">
+              <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
+              Available for small web projects
             </div>
-          ))}
+            <h1 className="mt-6 font-display text-5xl md:text-7xl lg:text-7xl font-bold leading-[0.95]">
+              Hi, I'm <span className="text-gradient">Mohammed Munjid P</span>.
+              <br />I build the web.
+            </h1>
+            <p className="mt-8 max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed">
+              An 8th-class student with a serious passion for professional web development.
+              I design and code clean, modern websites — and I'm just getting started.
+            </p>
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 font-semibold shadow-glow hover:scale-[1.02] transition"
+              >
+                View my work <ArrowUpRight className="h-4 w-4" />
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-6 py-3 font-semibold hover:bg-card transition"
+              >
+                Get in touch
+              </a>
+            </div>
+
+            <div className="mt-16 grid grid-cols-3 gap-6 max-w-lg">
+              {[
+                { k: "8th", v: "Class student" },
+                { k: "5+", v: "Mini projects" },
+                { k: "∞", v: "Curiosity" },
+              ].map((s) => (
+                <div key={s.v}>
+                  <div className="font-display text-3xl md:text-4xl font-bold text-gradient">{s.k}</div>
+                  <div className="text-xs md:text-sm text-muted-foreground mt-1">{s.v}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative mx-auto lg:mx-0 w-full max-w-sm">
+            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-primary/30 via-accent/20 to-transparent blur-2xl" />
+            <div className="relative aspect-square overflow-hidden rounded-[2rem] border border-border bg-card shadow-glow">
+              <img
+                src={munjidPortrait}
+                alt="Portrait of Mohammed Munjid P"
+                className="h-full w-full object-cover"
+                loading="eager"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
