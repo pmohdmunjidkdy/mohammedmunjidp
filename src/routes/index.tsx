@@ -87,6 +87,15 @@ function Nav() {
             <Github className="h-4 w-4" />
           </a>
           <a
+            href="https://wa.me/918547394227"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="WhatsApp"
+            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card/50 text-muted-foreground hover:text-foreground hover:bg-card transition"
+          >
+            <WhatsAppIcon className="h-4 w-4" />
+          </a>
+          <a
             href={X_URL}
             target="_blank"
             rel="noreferrer"
