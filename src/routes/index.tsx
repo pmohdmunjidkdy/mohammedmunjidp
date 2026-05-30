@@ -334,15 +334,26 @@ function Footer() {
     <footer className="border-t border-border py-10">
       <div className="mx-auto max-w-6xl px-6 flex flex-wrap items-center justify-between gap-4 text-sm text-muted-foreground">
         <div>© {new Date().getFullYear()} Mohammed Munjid P.</div>
-        <a
-          href={X_URL}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-2 hover:text-foreground transition"
-        >
-          <XIcon className="h-4 w-4" />
-          @pmohd_munjid
-        </a>
+        <div className="flex items-center gap-5">
+          <a
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 hover:text-foreground transition"
+          >
+            <Github className="h-4 w-4" />
+            GitHub
+          </a>
+          <a
+            href={X_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 hover:text-foreground transition"
+          >
+            <XIcon className="h-4 w-4" />
+            @pmohd_munjid
+          </a>
+        </div>
       </div>
     </footer>
   );
