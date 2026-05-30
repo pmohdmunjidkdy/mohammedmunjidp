@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import munjidPortrait from "@/assets/munjid-portrait.png";
 import {
   Code2,
   Palette,
