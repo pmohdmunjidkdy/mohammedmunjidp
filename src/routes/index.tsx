@@ -46,6 +46,7 @@ export const Route = createFileRoute("/")({
 });
 
 const X_URL = "https://x.com/pmohd_munjid";
+const GITHUB_URL = "https://github.com/pmohdmunjidkdy";
 
 function Portfolio() {
   return (
