@@ -13,6 +13,7 @@ import {
   Smartphone,
   Wrench,
   GraduationCap,
+  Github,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -45,6 +46,7 @@ export const Route = createFileRoute("/")({
 });
 
 const X_URL = "https://x.com/pmohd_munjid";
+const GITHUB_URL = "https://github.com/pmohdmunjidkdy";
 
 function Portfolio() {
   return (
@@ -73,15 +75,26 @@ function Nav() {
           <a href="#services" className="hover:text-foreground transition">Services</a>
           <a href="#contact" className="hover:text-foreground transition">Contact</a>
         </nav>
-        <a
-          href={X_URL}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-semibold hover:opacity-90 transition"
-        >
-          Follow on X
-          <ArrowUpRight className="h-4 w-4" />
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub profile"
+            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card/50 text-muted-foreground hover:text-foreground hover:bg-card transition"
+          >
+            <Github className="h-4 w-4" />
+          </a>
+          <a
+            href={X_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-semibold hover:opacity-90 transition"
+          >
+            Follow on X
+            <ArrowUpRight className="h-4 w-4" />
+          </a>
+        </div>
       </div>
     </header>
   );
@@ -321,15 +334,26 @@ function Footer() {
     <footer className="border-t border-border py-10">
       <div className="mx-auto max-w-6xl px-6 flex flex-wrap items-center justify-between gap-4 text-sm text-muted-foreground">
         <div>© {new Date().getFullYear()} Mohammed Munjid P.</div>
-        <a
-          href={X_URL}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-2 hover:text-foreground transition"
-        >
-          <XIcon className="h-4 w-4" />
-          @pmohd_munjid
-        </a>
+        <div className="flex items-center gap-5">
+          <a
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 hover:text-foreground transition"
+          >
+            <Github className="h-4 w-4" />
+            GitHub
+          </a>
+          <a
+            href={X_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 hover:text-foreground transition"
+          >
+            <XIcon className="h-4 w-4" />
+            @pmohd_munjid
+          </a>
+        </div>
       </div>
     </footer>
   );
