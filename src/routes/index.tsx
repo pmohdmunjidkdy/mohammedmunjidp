@@ -390,6 +390,15 @@ function Footer() {
             <XIcon className="h-4 w-4" />
             @pmohd_munjid
           </a>
+          <a
+            href="https://wa.me/918547394227"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 hover:text-foreground transition"
+          >
+            <WhatsAppIcon className="h-4 w-4" />
+            WhatsApp
+          </a>
         </div>
       </div>
     </footer>
