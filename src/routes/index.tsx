@@ -13,6 +13,7 @@ import {
   Smartphone,
   Wrench,
   GraduationCap,
+  Github,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
