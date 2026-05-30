@@ -292,13 +292,24 @@ function Contact() {
         <p className="mt-4 text-muted-foreground">
           Got a project, idea, or just want to say hi? Drop a message or reach me on X.
         </p>
-        <a
-          href="tel:+918547394227"
-          className="mt-4 inline-flex items-center gap-2 font-display text-lg font-semibold text-primary hover:opacity-80 transition"
-        >
-          <Phone className="h-4 w-4" />
-          +91 85473 94227
-        </a>
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
+          <a
+            href="tel:+918547394227"
+            className="inline-flex items-center gap-2 font-display text-lg font-semibold text-primary hover:opacity-80 transition"
+          >
+            <Phone className="h-4 w-4" />
+            +91 85473 94227
+          </a>
+          <a
+            href="https://wa.me/918547394227"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-4 py-2 text-sm font-semibold hover:bg-card transition"
+          >
+            <WhatsAppIcon className="h-4 w-4" />
+            WhatsApp
+          </a>
+        </div>
 
         <form
           onSubmit={(e) => {
