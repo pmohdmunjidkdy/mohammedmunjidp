@@ -75,15 +75,26 @@ function Nav() {
           <a href="#services" className="hover:text-foreground transition">Services</a>
           <a href="#contact" className="hover:text-foreground transition">Contact</a>
         </nav>
-        <a
-          href={X_URL}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-semibold hover:opacity-90 transition"
-        >
-          Follow on X
-          <ArrowUpRight className="h-4 w-4" />
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub profile"
+            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card/50 text-muted-foreground hover:text-foreground hover:bg-card transition"
+          >
+            <Github className="h-4 w-4" />
+          </a>
+          <a
+            href={X_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-semibold hover:opacity-90 transition"
+          >
+            Follow on X
+            <ArrowUpRight className="h-4 w-4" />
+          </a>
+        </div>
       </div>
     </header>
   );
