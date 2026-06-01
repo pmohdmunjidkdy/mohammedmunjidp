@@ -15,6 +15,7 @@ import {
   Wrench,
   GraduationCap,
   Github,
+  Instagram,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -48,6 +49,7 @@ export const Route = createFileRoute("/")({
 
 const X_URL = "https://x.com/pmohd_munjid";
 const GITHUB_URL = "https://github.com/pmohdmunjidkdy";
+const INSTAGRAM_URL = "https://www.instagram.com/p.mohdmunjidkdy1/";
 
 function Portfolio() {
   return (
@@ -85,6 +87,15 @@ function Nav() {
             className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card/50 text-muted-foreground hover:text-foreground hover:bg-card transition"
           >
             <Github className="h-4 w-4" />
+          </a>
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card/50 text-muted-foreground hover:text-foreground hover:bg-card transition"
+          >
+            <Instagram className="h-4 w-4" />
           </a>
           <a
             href="https://wa.me/918547394227"
@@ -345,8 +356,17 @@ function Contact() {
               <Mail className="h-4 w-4" />
               Send message
             </button>
-            <a
-              href={X_URL}
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 hover:text-foreground transition"
+          >
+            <Instagram className="h-4 w-4" />
+            Instagram
+          </a>
+          <a
+            href={X_URL}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition"
