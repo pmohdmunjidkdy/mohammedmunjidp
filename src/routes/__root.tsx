@@ -72,18 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
+      { title: "mmp portfolio" },
       { name: "description", content: "Mohammed's Web Portfolio showcases skills, projects, and services for aspiring web developer Mohammed Munjid.P." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
+      { property: "og:title", content: "mmp portfolio" },
       { property: "og:description", content: "Mohammed's Web Portfolio showcases skills, projects, and services for aspiring web developer Mohammed Munjid.P." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
+      { name: "twitter:title", content: "mmp portfolio" },
       { name: "twitter:description", content: "Mohammed's Web Portfolio showcases skills, projects, and services for aspiring web developer Mohammed Munjid.P." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/33a026a7-19ec-4553-8eb0-a50571c049c8/id-preview-e430c15b--6339dab3-c95c-434a-b56f-0129f9603e71.lovable.app-1779953159694.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/33a026a7-19ec-4553-8eb0-a50571c049c8/id-preview-e430c15b--6339dab3-c95c-434a-b56f-0129f9603e71.lovable.app-1779953159694.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2dac7e50-44ae-45d1-b44b-74a12278e1ae" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2dac7e50-44ae-45d1-b44b-74a12278e1ae" },
     ],
     links: [
       {
