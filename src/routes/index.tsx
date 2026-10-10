@@ -16,6 +16,7 @@ import {
   GraduationCap,
   Github,
   Instagram,
+  ClipboardList,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -50,6 +51,8 @@ export const Route = createFileRoute("/")({
 const X_URL = "https://x.com/pmohd_munjid";
 const GITHUB_URL = "https://github.com/pmohdmunjidkdy";
 const INSTAGRAM_URL = "https://www.instagram.com/p.mohdmunjidkdy1/";
+const GOOGLE_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSf4WfMbicF10C-R1PNiu0oiRtSWgbQW5-ADopbOwUeDQcrsJQ/viewform?usp=publish-editor";
 
 function Portfolio() {
   return (
@@ -322,6 +325,26 @@ function Contact() {
           </a>
         </div>
 
+        <div className="mt-8 rounded-3xl border border-primary/30 bg-primary/5 p-7 text-center">
+          <h3 className="font-display text-xl font-semibold">
+            Tell me about your project
+          </h3>
+          <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+            Fill in this short form and your details reach me directly — I'll
+            reply with a plan and a price.
+          </p>
+          <a
+            href={GOOGLE_FORM_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-5 inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 font-semibold shadow-glow hover:scale-[1.02] transition"
+          >
+            <ClipboardList className="h-4 w-4" />
+            Open the form
+            <ArrowUpRight className="h-4 w-4" />
+          </a>
+        </div>
+
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -418,6 +441,15 @@ function Footer() {
           >
             <WhatsAppIcon className="h-4 w-4" />
             WhatsApp
+          </a>
+          <a
+            href={GOOGLE_FORM_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 hover:text-foreground transition"
+          >
+            <ClipboardList className="h-4 w-4" />
+            Order Form
           </a>
         </div>
       </div>
