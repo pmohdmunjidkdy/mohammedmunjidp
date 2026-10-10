@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
 import munjidPortrait from "@/assets/munjid-portrait.png";
 import {
   Code2,
@@ -298,7 +297,6 @@ function Services() {
 }
 
 function Contact() {
-  const [sent, setSent] = useState(false);
   return (
     <section id="contact" className="py-24 border-t border-border">
       <div className="mx-auto max-w-3xl px-6 text-center">
@@ -327,11 +325,11 @@ function Contact() {
 
         <div className="mt-8 rounded-3xl border border-primary/30 bg-primary/5 p-7 text-center">
           <h3 className="font-display text-xl font-semibold">
-            Tell me about your project
+            Send me a message
           </h3>
           <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-            Fill in this short form and your details reach me directly — I'll
-            reply with a plan and a price.
+            Fill in this short form and it reaches me directly — I'll reply with
+            a plan and a price.
           </p>
           <a
             href={GOOGLE_FORM_URL}
@@ -339,71 +337,32 @@ function Contact() {
             rel="noreferrer"
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 font-semibold shadow-glow hover:scale-[1.02] transition"
           >
-            <ClipboardList className="h-4 w-4" />
-            Open the form
+            <Mail className="h-4 w-4" />
+            Send message
             <ArrowUpRight className="h-4 w-4" />
           </a>
         </div>
 
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            setSent(true);
-          }}
-          className="mt-10 grid gap-4 text-left"
-        >
-          <div className="grid sm:grid-cols-2 gap-4">
-            <input
-              required
-              placeholder="Your name"
-              className="rounded-xl border border-input bg-card px-4 py-3 outline-none focus:border-primary transition"
-            />
-            <input
-              required
-              type="email"
-              placeholder="Email address"
-              className="rounded-xl border border-input bg-card px-4 py-3 outline-none focus:border-primary transition"
-            />
-          </div>
-          <textarea
-            required
-            rows={5}
-            placeholder="Your message..."
-            className="rounded-xl border border-input bg-card px-4 py-3 outline-none focus:border-primary transition resize-none"
-          />
-          <div className="flex flex-wrap items-center gap-4 justify-between">
-            <button
-              type="submit"
-              className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 font-semibold shadow-glow hover:scale-[1.02] transition"
-            >
-              <Mail className="h-4 w-4" />
-              Send message
-            </button>
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-5 text-sm">
           <a
             href={INSTAGRAM_URL}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 hover:text-foreground transition"
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition"
           >
             <Instagram className="h-4 w-4" />
             Instagram
           </a>
           <a
             href={X_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition"
-            >
-              or DM me on X
-              <ArrowUpRight className="h-4 w-4" />
-            </a>
-          </div>
-          {sent && (
-            <p className="text-sm text-primary mt-2">
-              Thanks! Your message is ready — I'll wire this up to email soon.
-            </p>
-          )}
-        </form>
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition"
+          >
+            or DM me on X
+            <ArrowUpRight className="h-4 w-4" />
+          </a>
+        </div>
       </div>
     </section>
   );
